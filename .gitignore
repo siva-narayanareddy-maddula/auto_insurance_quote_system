@@ -1,0 +1,7 @@
+/.settings/
+/target/
+.classpath
+.project
+.checkstyle
+.DS_Store
+
