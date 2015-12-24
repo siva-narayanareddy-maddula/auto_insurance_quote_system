@@ -1,0 +1,4 @@
+/**
+ * 
+ */
+alert('resource wiring done..');
