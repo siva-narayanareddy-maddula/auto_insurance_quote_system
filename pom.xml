@@ -22,7 +22,11 @@
 	
 		<javax.servlet.api.version>3.0.1</javax.servlet.api.version>
 		<javax.servlet.jsp.api.version>2.2.1</javax.servlet.jsp.api.version>
+		<jstl.version>1.2</jstl.version>
+		
 		<org.springframework.version>4.0.4.RELEASE</org.springframework.version>
+		
+		<com.knappsack.swagger.version>0.3.3</com.knappsack.swagger.version>
 	</properties>
 	
 
@@ -40,6 +44,12 @@
 			<version>${javax.servlet.jsp.api.version}</version>
 		</dependency>
 		
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+		
 		<!-- Jackson dependency -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
@@ -52,6 +62,15 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
+	
+		
+		<!-- Knappsack Swagger Dependency  -->
+		<dependency>
+			<groupId>com.knappsack</groupId>
+			<artifactId>swagger4spring-web</artifactId>
+			<version>${com.knappsack.swagger.version}</version>
+		</dependency>
+	
 	
 		<dependency>
 			<groupId>junit</groupId>
