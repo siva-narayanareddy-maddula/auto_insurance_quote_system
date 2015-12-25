@@ -4,9 +4,10 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 /**
- * Embed HTML directly into the Javadoc.
+ * Global exception handler for all sorts of exceptions occuring in controller classes.
+ * 
+ * @author Siva Narayana Reddy M [siva.narayanareddy.maddula@gmail.com]
  *
- * @author <a href="mailto:siva.narayanareddy.maddula@gmail.com">SivaNarayana Reddy M </a>
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {

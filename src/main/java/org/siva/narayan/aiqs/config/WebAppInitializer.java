@@ -9,6 +9,12 @@ import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
+/**
+ * Main Application initializer : deployment descriptor.
+ * 
+ * @author Siva Narayana Reddy M [siva.narayanareddy.maddula@gmail.com]
+ *
+ */
 public class WebAppInitializer implements WebApplicationInitializer {
 
 	@Override
