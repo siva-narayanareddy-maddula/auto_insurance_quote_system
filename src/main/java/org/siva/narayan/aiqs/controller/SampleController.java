@@ -5,8 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.siva.narayan.aiqs.db.entity.SampleEntity;
+import org.siva.narayan.aiqs.db.repo.SampleRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -68,5 +73,46 @@ public class SampleController {
 			put("location", "India");
 		}};
 	}
+	
+	
+	
+	
+	// SAMPLE TABLE OPERATIONS 
+	
+	@Autowired
+	private SampleRepository sampleRepo;
+	
+	
+	@RequestMapping(value = "/samples/all", method = RequestMethod.GET)
+	public @ResponseBody List<SampleEntity> listAll() {
+		return sampleRepo.findAll();
+	}
+	
+	@RequestMapping(value = "/samples/{id}", method = RequestMethod.GET)
+	public @ResponseBody SampleEntity one(@PathVariable("id") Long id ) {
+		final SampleEntity sample = sampleRepo.findOne(id);
+		if(sample == null) {
+			throw new RuntimeException("Requested Sample is not available with us. Please make sure the 'id' provided is correct.");
+		}
+		return sample;
+	}
+	
+	@RequestMapping(value = "/samples/remove/all", method = RequestMethod.DELETE)
+	public @ResponseBody String deleteAll() {
+		sampleRepo.deleteAll();
+		return "Deleted all the samples";
+	}
+	
+	@RequestMapping(value = "/samples/remove/{id}", method = RequestMethod.DELETE)
+	public @ResponseBody String delete(@PathVariable("id") Long id) {
+		sampleRepo.delete(id);
+		return "Deleted the sample : " + id;
+	}
+	
+	@RequestMapping(value = "/samples/save", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody List<SampleEntity> saveAll(@RequestBody List<SampleEntity> samples) {
+		return sampleRepo.save(samples);
+	}
+	
 	
 }
