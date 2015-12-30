@@ -1,0 +1,13 @@
+VM_ARGS FOR TOMCAT :: ( if you are behind proxy )
+
+If your system network is configured to use proxy :
+
+	java -Djava.net.useSystemProxies=true
+
+If you are not able to use system proxy configuration :
+
+-Dhttp.proxyHost=proxy2.wipro.com -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy2.wipro.com -Dhttps.proxyPort=8080
+
+To start H2 from behind a proxy :
+
+java {JAVA_PROXY_FLAGS} -jar h2-1.4.182.jar 
