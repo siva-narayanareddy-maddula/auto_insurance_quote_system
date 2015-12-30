@@ -1,0 +1,177 @@
+Dec 30, 2015 7:35:39 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Dec 30, 2015 7:35:39 PM org.apache.catalina.core.ApplicationContext log
+INFO: Spring WebApplicationInitializers detected on classpath: [org.siva.narayan.aiqs.config.WebAppInitializer@4e423d01]
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 30, 2015 7:35:40 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+Dec 30, 2015 7:35:44 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+Dec 30, 2015 7:35:45 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.3.2.Final}
+Dec 30, 2015 7:35:45 PM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+Dec 30, 2015 7:35:45 PM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+Dec 30, 2015 7:35:46 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+Dec 30, 2015 7:35:46 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Dec 30, 2015 7:35:47 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Dec 30, 2015 7:35:52 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+Dec 30, 2015 7:35:52 PM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+Dec 30, 2015 7:35:52 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+Dec 30, 2015 7:35:53 PM org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'dispatcherServlet'
+Dec 30, 2015 7:35:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/docs
+Dec 30, 2015 7:35:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/docs has finished in 165 ms
+Dec 30, 2015 7:35:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/examples
+Dec 30, 2015 7:35:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Dec 30, 2015 7:35:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Dec 30, 2015 7:35:54 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@690931ca')
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/examples has finished in 712 ms
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/host-manager
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/host-manager has finished in 162 ms
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/manager
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/manager has finished in 157 ms
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/ROOT
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /Users/si255323/Tools/tomcat-7.0.65/webapps/ROOT has finished in 103 ms
+Dec 30, 2015 7:35:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Dec 30, 2015 7:35:54 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Dec 30, 2015 7:35:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 28676 ms
+Hibernate: select sampleenti0_.ID as ID1_0_, sampleenti0_.NAME as NAME2_0_ from SAMPLE sampleenti0_
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: delete from SAMPLE where ID=?
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: call next value for SAMPLE_SEQ
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)
+Hibernate: insert into SAMPLE (NAME, ID) values (?, ?)

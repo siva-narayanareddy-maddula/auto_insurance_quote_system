@@ -101,7 +101,7 @@
             		text = text.substring(text.lastIndexOf(".") + 1);
             		$(this).text(text);
             	})  */
-            }, 2000); // 500 millis to truncate the package-name and display only the class-name. 
+            }, 5000); // 500 millis to truncate the package-name and display only the class-name. 
             
         });
     </script>
