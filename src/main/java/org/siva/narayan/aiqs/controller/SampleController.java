@@ -30,9 +30,9 @@ import com.knappsack.swagger4springweb.annotation.ApiExclude;
 public class SampleController {
 	
 	@ApiExclude()
-	@RequestMapping(value = "/login")
-	public String loginView() {
-		return "login";
+	@RequestMapping(value = "")
+	public String sampleView() {
+		return "sample";
 	}
 
 	@ApiExclude()

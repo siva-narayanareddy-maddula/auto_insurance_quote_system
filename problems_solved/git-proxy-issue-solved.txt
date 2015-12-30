@@ -1,0 +1,13 @@
+WORKING WITH GIT BEHIND PROXY ::
+
+Execute the Below 3 commands :
+
+	git config --global http.proxy username:password@proxy.company.com:proxyPort
+	git config --global https.proxy username:password@proxy.company.com:proxyPort
+	git config --global http.sslVerify false
+
+In case if you have any Special character in your password like [@] : then use %40 instead of that character.
+
+Refer the below link for more URL encoded values of special characters :
+
+	Refer : http://www.w3schools.com/tags/ref_urlencode.asp 
