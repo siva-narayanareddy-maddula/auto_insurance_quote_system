@@ -6,7 +6,7 @@ If your system network is configured to use proxy :
 
 If you are not able to use system proxy configuration :
 
--Dhttp.proxyHost=proxy2.wipro.com -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy2.wipro.com -Dhttps.proxyPort=8080
+-Dhttp.proxyHost=proxy.company.com -Dhttp.proxyPort=8080 -Dhttps.proxyHost=proxy.company.com -Dhttps.proxyPort=8080
 
 To start H2 from behind a proxy :
 
