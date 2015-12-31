@@ -1,4 +1,4 @@
-# auto_insurance_quote_system
+# Auto Insurance Quote System
 
 
 Functional Requirements ::
